@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <style>
+        #content{
+            height: auto;
+        }
+        #content > div{
+            float:inline-end;
+            float:left;
+        }
+        img{
+            height:500px;
+        }
+    </style>
+    <title>KUO</title>
+</head>
+<body>
+    {% from 'menu.html' import menubar, endbar %}
+    {{ menubar() }}
+    <div id="content">
+        <div class="fragment0" style="height:auto">
+            <h1>
+                고려대학교 관현악단<br>
+                제52회 정기연주회<br>
+            </h1>        
+            <div style="float:left;">
+                <img src="{{ url_for('static', filename='pictures/Annual_52.jpg') }}" alt="이미지 로드에 실패하였습니다."><br>
+            </div>
+            <div style="float:left;float:inline-start">
+                <p>
+                    2024년 8월 24일(토) 오후 7시 | 고려대학교 인촌기념관 대강당<br>
+                    지휘 | 이은구<br>
+                    J. Strauss II | Die Fledermaus Overture<br>
+                    R. Wagner | Tristan and Isolde, WWV 90 (Vorspiel and Liebestod)<br>
+                    A. Glazunov | Symphony No.5 in B-flat Major, Op.55<br>
+                </p>
+            </div>
+        </div>
+
+        <div class="fragment1">
+            <h1>단체 소개</h1>
+            <p>
+                고려대학교 관현악단.<br>
+                고려대학교 중앙동아리 아마추어 오케스트라.<br>
+                Since 1970<br>
+            </p>
+            <p>
+                고려대학교 관현악단은 음악대학이 없는 고려대학교에서 클래식을 사랑하는 단원들이 모여 명실상부한 예술지킴이로 활동하고 있습니다. 1971년 현악부로 동아리를 등록하고 1972년 제1회 정기연주회를 개최하였고, 1983년에 관현악단으로 개칭한 이후 제1회 신춘음악회를 개최하여, 이후부터 매년 3월 신춘음악회와 9월 정기연주회로 2번 정기 공연을 개최하고 있습니다. 2005년에는 고려대학교 개교 100주년 기념연주회를 예술의 전당에서 개최하였으며, ‘Symphony for Korea University’를 초연하기도 하였다. 고려대학교 관현악단의 정기공연에서는 서곡, 모음곡 또는 협주곡, 교향곡의 곡들을 단원들이 두 달이 넘는 시간동안 연습하고 이를 연주하여 관객에게 아름다운 선율과 감동을 선사하고 있습니다.
+            </p>
+        </div>
+
+        <div class="fragment2" id="map">
+            <h1>오시는 길</h1>
+            <br>
+            고려대학교 학생회관 612호
+            <br>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3161.6199255650045!2d127.02918317987233!3d37.587566627827854!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357cbca45e0a0f81%3A0xc05c59792f7b32b6!2sStudent%20Union%20Hall!5e0!3m2!1sen!2skr!4v1720952439185!5m2!1sen!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+
+    {{ endbar() }}
+</body>
+</html>
