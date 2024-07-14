@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 version: "3.7"
 
 services:
@@ -14,20 +13,3 @@ services:
     restart: always
     ports:
         - "80:80"
-=======
-version: "3.7"
-
-services:
-  backend:
-    build: ./flask
-    container_name: backend
-    expose:
-      - 5001
-
-  nginx:
-    build: ./nginx
-    container_name: nginx
-    restart: always
-    ports:
-        - "80:80"
->>>>>>> develop
