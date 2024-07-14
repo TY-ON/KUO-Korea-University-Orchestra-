@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -26,4 +27,34 @@
     </div>
     {{ endbar() }}
 </body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/operation.css') }}">
+    
+    <title>KUO</title>
+</head>
+<body>
+    {% from 'menu.html' import menubar, endbar %}
+    {{ menubar() }}
+    <div id="content">
+        <h1>역대 회장단</h1>
+        <div>
+            <h2>
+                60대. 2023.09 ~ 2024.08.
+            </h2> 
+            <img src="{{ url_for('static', filename='pictures/oper_60.jpg') }}" alt="이미지 로드에 실패하였습니다."><br>
+            회장 현예찬<br>
+            부회장 김설지<br>
+            총무 한서현<br>
+            회계 이수민<br>
+        </div>
+    </div>
+    {{ endbar() }}
+</body>
+>>>>>>> develop
 </html>

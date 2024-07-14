@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 /*전체 영역*/
 * {
@@ -74,4 +75,82 @@ div{
 #content{
     position: relative;
     height: 50vw;
+=======
+
+/*전체 영역*/
+* {
+    margin:0px;
+    padding:0px;
+}
+
+ul li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+div{
+    padding:20px
+}
+
+#menu{
+    height: 100px;
+    padding: 0px;
+}
+
+#menu > ul > li{
+    font: bold 20px "malgun gothic";
+    text-align: center;
+
+    float:left;
+    width:140px;
+    padding: 0px;
+    position: relative;
+}
+#menu > ul > li > ul{
+    font-size: 14px;
+    display: none;
+    padding-top: 10px;
+    position: absolute;
+    text-align: center;
+}
+#menu > ul > li:hover{
+    border-bottom: 3px solid;
+    
+}
+#menu > ul > li:hover > ul{
+    display: block;
+}
+#menu > ul > li > ul > a > li{
+    width:140px;
+    margin-top:10px;
+}
+
+#end{
+    background-color: rgb(86, 86, 86);
+    padding: 0px;
+    width: calc(100vw - 17px);
+    height: 200px;
+    float: inline-end;
+}
+
+#end > #icon{
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    float: left;
+    align-self: center;
+}
+#end > #icon > a {
+    align-items: center;
+}
+
+
+#content{
+    position: relative;
+    height: 50vw;
+>>>>>>> develop
 }
