@@ -7,7 +7,7 @@ Web of Korea University Orchestra
 using nginx as reverse proxy
 
 ## other info
-virtualenv name : "KUO_web"
+virtualenv name : "KUO__web"
 For test, proxy to WSL
 
 # developing
@@ -20,4 +20,6 @@ For test, proxy to WSL
         + alumni goto naver cafe
         + others have examples
 
-
++ 2024/08/07 alpha 0.0.2
+    + menubar design apply
+        + FreePik icon
