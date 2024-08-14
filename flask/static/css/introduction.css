@@ -1,0 +1,70 @@
+/* font */
+
+/* KoPub world 돋움 */
+@import "//cdn.jsdelivr.net/npm/font-kopubworld@1.0/dotum.min.css";
+
+#outter-frame {
+    padding: 0px;
+    position: relative;
+}
+/* NB */
+#menu {
+    z-index: 1;
+    position: absolute;
+}
+
+#end {
+    position: relative;
+    top: 700px;
+}
+
+/* main content */
+#content {
+    position: absolute;
+    left: 0px; 
+    right: 0px;
+    width: 450px;
+    height: 700px;
+
+    padding-top: 90px;
+
+    color: var(--main-font-color);
+    background: linear-gradient(174.12deg, rgba(57, 4, 20, 0.86) 1.62%, rgba(0, 0, 0, 0.86) 127.49%);
+}
+
+* {
+    font-family: 'KoPubWorld Dotum';
+    font-style: normal;
+    font-weight: 700;
+    text-align: left;
+
+    --main-font-color: white;
+    color: var(--main-font-color);
+}
+
+h1 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 35px;
+}
+
+h2 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 27px;
+}
+
+p {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: 300;
+
+    font-size: 14px;
+    line-height: 27px;
+}
