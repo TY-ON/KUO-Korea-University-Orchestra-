@@ -30,3 +30,6 @@ For test, proxy to WSL
 + 2024/08/14 alpha 0.0.3
     + set GNB and main content of introduction briefly
     + design applied when vw is 1250px+
+
++ 2024/08/28 alpha 0.0.4
+    + making grid in consert_details

@@ -15,7 +15,7 @@
 
 #end {
     position: relative;
-    top: 700px;
+    top: 100vh;
 }
 
 /* main content */
@@ -24,7 +24,7 @@
     left: 0px; 
     right: 0px;
     width: 450px;
-    height: 700px;
+    height: 100vh;
 
     padding-top: 90px;
 
