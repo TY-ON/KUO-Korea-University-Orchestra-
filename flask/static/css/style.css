@@ -22,24 +22,17 @@ div{
     padding:20px
 }
 
-#end > #icon{
-    width: 40px;
-    height: 40px;
-    padding: 0px;
-    float: left;
-    align-self: center;
-}
 
 #logo{
-    padding: 10px;
-    width: 70px;
-    height: 70px;
+    padding: 5px;
+    width: 50px;
+    height: 50px;
 }
 
 /* menu bar (GND) */
 #menu{
     width: calc(100vw - 17px);
-    height: 90px;
+    height: 60px;
     padding: 0px;
     display: flex;
 
@@ -81,10 +74,10 @@ div{
     justify-content: center;
 }
 #menu > div > div > #main_subject{
-    font-size: 24px;
+    font-size: 20px;
 }
 #menu > div > div > #sub_subject{
-    font-size: 14px;
+    font-size: 11px;
 }
 
 #menu > ul{
@@ -127,6 +120,10 @@ div{
 }
 #menu > ul > li > ul > a > li{
     margin-top:10px;
+}
+
+#menu > ul > li > a > #icon{
+    filter: invert(100%);
 }
 
 /* Footer (FND) */
