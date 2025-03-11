@@ -9,30 +9,39 @@
     padding:0px;
 }
 
+body {
+    font-size: 4vw;
+    width: 100%;
+}
+
 ul li{
+    font-size: 1em;
     list-style: none;
 }
 
 a{
+    font-size: 1em;
+
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 div{
-    padding:20px
+    font-size: 1em;
+    padding: 1em;
 }
 
 
 #logo{
-    padding: 5px;
-    width: 50px;
-    height: 50px;
+    padding: 0.075em;
+    width: 0.85em;
+    height: 0.85em;
 }
 
 /* menu bar (GND) */
 #menu{
-    width: calc(100vw - 17px);
-    height: 60px;
+    width: 100%;
+    height: 1em;
     padding: 0px;
     display: flex;
 
@@ -45,11 +54,14 @@ div{
     word-break: keep-all;
 }
 #menu > div{
-    width: 350px;
+    width: 4em;
     flex-grow: 0;
     padding: 0px;
 
     display: flex;
+    flex-wrap: wrap;
+
+    align-content: center;
 }
 #menu > div > #logo{
     filter: grayscale(100) brightness(999)
@@ -74,15 +86,18 @@ div{
     justify-content: center;
 }
 #menu > div > div > #main_subject{
-    font-size: 20px;
+    font-size: 0.3em;
 }
 #menu > div > div > #sub_subject{
-    font-size: 11px;
+    font-size: 0.2em;
 }
 
 #menu > ul{
     flex-grow: 1;
     display: flex;
+
+    font-size: 0.35em;
+
     align-items: center;
     justify-content: flex-end;
 }
@@ -91,7 +106,7 @@ div{
     font-family: 'KoPubWorld Dotum';
     font-style: normal;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 1em;
     text-align: center;
 
     float:left;

@@ -5,12 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/consert.css') }}">
-    <style>
-        iframe{
-            width: calc(500*1.85px);
-            height: 500px;
-        }
-    </style>
 
     <title>KUO</title>
 </head>
@@ -26,16 +20,50 @@
                 <img id="poster" src="{{ url_for('static', filename='pictures/Annual_52.jpg') }}" alt="이미지 로드에 실패하였습니다.">
             </div>
             <div class="item">
-                test
+                <div id="p">
+                    <div id="p_item"></div>
+                    <div id="p_item">
+                        포스터
+                        <img src="{{ url_for('static', filename='pictures/eye.svg') }}" id="eye">
+                        <img src="{{ url_for('static', filename='pictures/download.svg') }}" id="download">
+                    </div>
+                    <div id="p_item">
+                        팜플렛
+                        <img src="{{ url_for('static', filename='pictures/eye.svg') }}" id="eye">
+                        <img src="{{ url_for('static', filename='pictures/download.svg') }}" id="download">
+                    </div>
+                </div>
             </div>
             <div class="item">
-                test
+                <p>
+                일시 | 2024년 8월 24일(토) 오후 7시<br>
+                장소 | 고려대학교 인촌기념관 대강당<br>
+                지휘 | 이은구
+                </p>
             </div>
             <div class="item">
-                test
+                <div id="p">
+                    <div id="p_item">
+                        프로그램
+                    </div>
+                    <div id="p_item">
+                        J. Strauss II | Die Fledermaus Overture
+                    </div>
+                    <div id="p_item">
+                        A. Glazunov | Symphony No.5 in B-flat Major, Op.55
+                    </div>
+                    <div id="p_item">
+                        R. Wagner | Tristan and Isolde, WWV 90 (Vorspiel and Liebestod)
+                    </div>
+                </div>
             </div>
             <div class="item">
-                test
+                <div id="p">
+                    <div id="p_subject">
+                        공연 영상
+                    </div>
+                </div>
+                <iframe src="https://www.youtube.com/embed/82viIpCu3z8" frameborder="0"></iframe>
             </div>
         </div>
         {{ endbar() }}
